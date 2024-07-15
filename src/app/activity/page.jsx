@@ -7,31 +7,31 @@ export default function Activity() {
   const activityData = [
     {
       id: 1,
-      title: "Aselole Bersama DPL",
+      title: "Pembekalan Bersama DPL",
       date: "15 Juli 2024",
       image: "/activity/pembekalandpl.jpg",
     },
     {
       id: 2,
-      title: "Fakyu Bersama DPL",
+      title: "Pemberian Materi Bersama DPL",
       date: "16 Juli 2024",
       image: "/activity/pembekalandpl.jpg",
     },
     {
       id: 3,
-      title: "Asu Bersama DPL",
+      title: "Diberi Materi Bersama DPL",
       date: "11 Juli 2024",
       image: "/activity/pembekalandpl.jpg",
     },
     {
       id: 4,
-      title: "Testing Bersama DPL",
+      title: "Pertemuan Bersama DPL",
       date: "17 Juli 2024",
       image: "/activity/pembekalandpl.jpg",
     },
     {
       id: 5,
-      title: "Pembekalan Bersama DPL",
+      title: "Perbincangan Bersama DPL",
       date: "14 Juli 2024",
       image: "/activity/pembekalandpl.jpg",
     },
