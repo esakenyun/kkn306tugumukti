@@ -2,40 +2,42 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import ActivityCard from "@/components/card/ActivityCard";
+import activityDataJson from "../../components/data/activityData.json";
 
 export default function Activity() {
-  const activityData = [
-    {
-      id: 1,
-      title: "Pembekalan Bersama DPL",
-      date: "15 Juli 2024",
-      image: "/activity/pembekalandpl.jpg",
-    },
-    {
-      id: 2,
-      title: "Pemberian Materi Bersama DPL",
-      date: "16 Juli 2024",
-      image: "/activity/pembekalandpl.jpg",
-    },
-    {
-      id: 3,
-      title: "Diberi Materi Bersama DPL",
-      date: "11 Juli 2024",
-      image: "/activity/pembekalandpl.jpg",
-    },
-    {
-      id: 4,
-      title: "Pertemuan Bersama DPL",
-      date: "17 Juli 2024",
-      image: "/activity/pembekalandpl.jpg",
-    },
-    {
-      id: 5,
-      title: "Perbincangan Bersama DPL",
-      date: "14 Juli 2024",
-      image: "/activity/pembekalandpl.jpg",
-    },
-  ];
+  const [activityData] = useState(activityDataJson.activity);
+  // const activityData = [
+  //   {
+  //     id: 1,
+  //     title: "Pembekalan Bersama DPL",
+  //     date: "15 Juli 2024",
+  //     image: "/activity/pembekalandpl.jpg",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Pemberian Materi Bersama DPL",
+  //     date: "16 Juli 2024",
+  //     image: "/activity/pembekalandpl.jpg",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Diberi Materi Bersama DPL",
+  //     date: "11 Juli 2024",
+  //     image: "/activity/pembekalandpl.jpg",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Pertemuan Bersama DPL",
+  //     date: "17 Juli 2024",
+  //     image: "/activity/pembekalandpl.jpg",
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Perbincangan Bersama DPL",
+  //     date: "14 Juli 2024",
+  //     image: "/activity/pembekalandpl.jpg",
+  //   },
+  // ];
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
