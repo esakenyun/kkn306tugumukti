@@ -16,7 +16,7 @@ const OurTeamCarousel = () => {
   }, []);
 
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -43,20 +43,20 @@ const OurTeamCarousel = () => {
   };
 
   const images = [
-    "/ourteams/Lukman.svg",
-    "/ourteams/Fasiha.svg",
-    "/ourteams/Reza.svg",
-    "/ourteams/Annisa.svg",
-    "/ourteams/Husni.svg",
-    "/ourteams/Alfina.svg",
-    "/ourteams/Alvito.svg",
-    "/ourteams/Fadhilah.svg",
-    "/ourteams/Desi.svg",
-    "/ourteams/Dzikri.svg",
-    "/ourteams/Faisal.svg",
-    "/ourteams/Siti.svg",
-    "/ourteams/Ririn.svg",
-    "/ourteams/Hilma.svg",
+    "/ourteams/Lukman.jpg",
+    "/ourteams/Fasiha.jpg",
+    "/ourteams/Reza.jpg",
+    "/ourteams/Annisa.jpg",
+    "/ourteams/Husni.jpg",
+    "/ourteams/Alfina.jpg",
+    "/ourteams/Alvito.jpg",
+    "/ourteams/Fadhilah.jpg",
+    "/ourteams/Desi.jpg",
+    "/ourteams/Dzikri.jpg",
+    "/ourteams/Faisal.jpg",
+    "/ourteams/Siti.jpg",
+    "/ourteams/Ririn.jpg",
+    "/ourteams/Hilma.jpg",
   ];
 
   return (
