@@ -1,3 +1,7 @@
+import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { AiOutlineTikTok } from "react-icons/ai";
+import Link from "next/link";
+
 export default function LocationSection() {
   return (
     <section className="bg-[#E0FBE2]" id="location">
@@ -23,6 +27,24 @@ export default function LocationSection() {
                 <h1 className="sm:text-2xl font-bold">Kecamatan Cisarua</h1>
                 <h1 className="sm:text-2xl font-bold">Kabupaten Bandung Barat</h1>
                 <h1 className="sm:text-2xl font-bold">Provinsi Jawa Barat</h1>
+              </div>
+              <div className="sm:pt-10">
+                <p className="sm:text-2xl font-bold sm:mb-5">My Social Media</p>
+                <div className="flex gap-3 sm:gap-5 items-center">
+                  <Link href="https://www.instagram.com/kkn_tugumukti_306/" target="_blank">
+                    <div className="py-2 px-2 bg-[#b0ebb4] rounded-lg text-slate-50 hover:text-pink-500 cursor-pointer hover:scale-105">
+                      <FaInstagram className="text-3xl" />
+                    </div>
+                  </Link>
+                  <Link href="https://www.tiktok.com/@kkn_tugumukti_306" target="_blank">
+                    <div className="py-2 px-2 bg-[#b0ebb4] rounded-lg text-slate-50 hover:text-black cursor-pointer hover:scale-105">
+                      <AiOutlineTikTok className="text-3xl" />
+                    </div>
+                  </Link>
+                  <div className="py-2 px-2 bg-[#b0ebb4] rounded-lg text-slate-50 hover:text-red-500 cursor-pointer hover:scale-105">
+                    <FaYoutube className="text-3xl" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

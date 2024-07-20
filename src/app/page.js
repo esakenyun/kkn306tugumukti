@@ -13,10 +13,12 @@ export default function Home() {
         <Navbar />
         <div className="container mt-24 mx-auto">
           <HomeSection />
-          <TeamsSection />
-          <ActivitySection />
-          <LocationSection />
         </div>
+        <TeamsSection />
+        <div className="container mt-24 mx-auto">
+          <ActivitySection />
+        </div>
+        <LocationSection />
         <Footer />
       </main>
     </>

@@ -24,6 +24,7 @@ const OurTeamCarousel = () => {
     centerMode: true,
     centerPadding: "0",
     autoplay: true,
+    pauseOnHover: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -77,6 +78,11 @@ const OurTeamCarousel = () => {
           .slick-next {
             display: none !important;
           }
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+          color: black !important;
         }
       `}</style>
     </div>

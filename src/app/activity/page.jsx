@@ -3,6 +3,8 @@ import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import ActivityCard from "@/components/card/ActivityCard";
 import activityDataJson from "../../components/data/activityData.json";
+import Link from "next/link";
+import { IoChevronBackOutline } from "react-icons/io5";
 
 export default function Activity() {
   const [activityData] = useState(activityDataJson.activity);
@@ -77,7 +79,15 @@ export default function Activity() {
           All Activities <br />
           KKN 306 Tugumukti
         </h1>
-        <div className="flex justify-center sm:justify-end py-2">
+        <div className="flex justify-between items-center py-2">
+          <div>
+            <Link href={"/"}>
+              <div className="flex items-center gap-2 py-2 bg-white w-fit px-4 rounded-full">
+                <IoChevronBackOutline className="text-sm sm:text-xl" />
+                <p className="text-xs sm:text-base">Back</p>
+              </div>
+            </Link>
+          </div>
           <div className="bg-[#E0FBE2] w-fit px-2 py-2 rounded-lg">
             <p className="sm:text-xl font-semibold text-slate-800">Filter</p>
             <div className="flex items-center gap-2">
@@ -89,7 +99,7 @@ export default function Activity() {
             </div>
             <div className="flex items-center justify-center pt-3">
               <button onClick={handleFilterAndSort} className="text-sm text-white font-semibold rounded-md bg-blue-500 px-4 py-1 hover:scale-105">
-                Apply Filter & Sort
+                Apply
               </button>
             </div>
           </div>

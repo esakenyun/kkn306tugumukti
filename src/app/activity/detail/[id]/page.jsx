@@ -35,7 +35,7 @@ export default function DetailActivity({ params }) {
               <p className="text-xs sm:text-base">Back</p>
             </div>
           </Link>
-          <p className="text-center sm:pt-2 sm:text-3xl font-extrabold">{activity.title}</p>
+          <p className="text-center pt-4 sm:pt-2 sm:text-3xl font-extrabold">{activity.title}</p>
           <div className="flex justify-center items-center gap-2">
             <p className="text-center text-xs sm:text-base font-semibold text-gray-500">{activity.date}</p>
             <FaCircle className="text-xs sm:text-base text-gray-300" />
@@ -45,7 +45,7 @@ export default function DetailActivity({ params }) {
             <Image src={activity.image} width={500} height={500} alt={activity.title} className="w-auto h-auto rounded-xl mt-2" />
           </div>
           <div className="mt-3 sm:mt-5 mb-3 sm:px-5">
-            <p className="text-justify">{activity.description}</p>
+            <p className="text-justify text-xs md:text-sm lg:text-base">{activity.description}</p>
           </div>
         </div>
       </div>
