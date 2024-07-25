@@ -39,7 +39,7 @@ export default function DetailActivity({ params }) {
           <div className="flex justify-center items-center gap-2">
             <p className="text-center text-xs sm:text-base font-semibold text-gray-500">{activity.date}</p>
             <FaCircle className="text-xs sm:text-base text-gray-300" />
-            <p className="text-xs sm:text-base font-semibold text-gray-500">8.45 AM</p>
+            <p className="text-xs sm:text-base font-semibold text-gray-500">{activity.hour}</p>
           </div>
           <div className="flex justify-center">
             <Image src={activity.image} width={500} height={500} alt={activity.title} className="w-auto h-auto rounded-xl mt-2" />
