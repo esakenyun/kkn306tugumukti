@@ -12,8 +12,8 @@ export default function ActivityCard({ imgUrl, title, date, previewUrl }) {
         </div>
       </div>
       <div className="text-white rounded-b-xl bg-slate-700 py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-slate-400">{date}</p>
+        <h5 className="sm:text-md font-semibold mb-2">{title}</h5>
+        <p className="sm:text-sm text-slate-400">{date}</p>
       </div>
     </div>
   );
